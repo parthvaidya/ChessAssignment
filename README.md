@@ -22,7 +22,7 @@ Instructions:
 
 1. Open the ChessPieces.cs file
 
-2. Uncomment the MoveTo in the  onMouseDown function
+2. Uncomment the MoveTo(row + 1, col) line in the  OnMouseDown() function
 
 3. Click the piece and on keyborad click Z to undo and Y to redo
 
