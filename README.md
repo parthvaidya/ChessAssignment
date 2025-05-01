@@ -20,7 +20,7 @@ Command pattern for Undo/Redo
 
 Instructions:
 
-1. Open the ChessPieces file
+1. Open the ChessPieces.cs file
 
 2. Uncomment the MoveTo in the  onMouseDown function
 
