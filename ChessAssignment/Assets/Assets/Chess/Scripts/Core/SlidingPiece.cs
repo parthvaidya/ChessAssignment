@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public abstract class SlidingPiece : ChessPiece
@@ -11,6 +10,13 @@ public abstract class SlidingPiece : ChessPiece
 
         while (r >= 0 && r < 8 && c >= 0 && c < 8)
         {
+            GameObject tile = ChessBoardPlacementHandler.Instance.GetTile(r, c);
+            Vector3 tilePos = tile.transform.position;
+
+            if (IsTileOccupied(tilePos))
+            {
+                break; // There's a piece here, stop
+            }
             TryHighlight(r, c);
             r += rowDir;
             c += colDir;

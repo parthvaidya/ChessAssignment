@@ -10,7 +10,8 @@ public class King : ChessPiece
         {
             int newRow = row + rowMoves[i];
             int newCol = col + colMoves[i];
-            TryHighlight(newRow, newCol);
+            TryHighlightIfUnoccupied(newRow, newCol);
+            //TryHighlight(newRow, newCol);
         }
     }
 }
