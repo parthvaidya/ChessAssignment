@@ -11,7 +11,7 @@ public class King : ChessPiece
             int newRow = row + rowMoves[i];
             int newCol = col + colMoves[i];
             TryHighlightIfUnoccupied(newRow, newCol);
-            //TryHighlight(newRow, newCol);
+            
         }
     }
 }

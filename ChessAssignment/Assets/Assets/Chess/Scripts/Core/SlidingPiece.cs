@@ -5,6 +5,7 @@ public abstract class SlidingPiece : ChessPiece
 {
     protected void HighlightInDirection(int rowDir, int colDir)
     {
+        //checking from the next tile
         int r = row + rowDir;
         int c = col + colDir;
 

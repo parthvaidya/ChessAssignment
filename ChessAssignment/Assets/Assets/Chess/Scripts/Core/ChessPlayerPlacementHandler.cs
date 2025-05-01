@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using UnityEngine;
 
 namespace Chess.Scripts.Core {
@@ -6,7 +6,7 @@ namespace Chess.Scripts.Core {
         [SerializeField] public int row, column;
 
         private void Start() {
-            transform.position = ChessBoardPlacementHandler.Instance.GetTile(row, column).transform.position;
+            transform.position = ChessBoardPlacementHandler.Instance.GetTile(row, column).transform.position; //get the chess board placment
         }
     }
 }

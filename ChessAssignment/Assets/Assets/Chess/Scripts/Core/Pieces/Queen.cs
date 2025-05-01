@@ -2,7 +2,7 @@ public class Queen : SlidingPiece
 {
     protected override void ShowLegalMoves()
     {
-        // Diagonal
+        // Diagonal movement
         HighlightInDirection(1, 1);
         HighlightInDirection(1, -1);
         HighlightInDirection(-1, 1);
